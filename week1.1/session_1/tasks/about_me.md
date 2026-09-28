@@ -1,3 +1,6 @@
 # About Me
 
-Using the resources linked in examples, have a go at making a quick about you page using Markdown.
+Hi this is Umar Ashwaq Mohammad
+- I am from India
+- I love football
+- My favourite food is Dosa
