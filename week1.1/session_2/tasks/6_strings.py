@@ -4,7 +4,9 @@
 user_string = input("Enter a string: ")
 
 print(f"\nOriginal String: {user_string}")
+
 print(f"Modified String 1: {user_string.lower()}")
+# This method conevrts the entire string into lower case
 print(f"Modified String 2: {user_string.upper()}")
 print(f"Modified String 3: {user_string.strip()}")
 print(f"Modified String 4: {user_string.replace('a', '@')}")
