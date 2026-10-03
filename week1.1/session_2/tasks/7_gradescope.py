@@ -6,13 +6,10 @@
 try:
     num_1 = int(input("Enter First Number: "))
     num_2 = int(input("Enter Second Number: "))
-    print()
     print("Hooray!! You enterd numbers")
-    print()
     result = (num_1 * num_2)
     print(f"The result is {result}")
 except:
-    print()
     print("That is not a number")
 
 # There is an extra point available for validating that they entered numbers!
