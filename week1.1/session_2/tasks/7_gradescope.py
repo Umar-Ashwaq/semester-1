@@ -13,7 +13,7 @@ try:
     print(f"The result is {result}")
 except:
     print()
-    print("This is not a number")
+    print("That is not a number")
 
 # There is an extra point available for validating that they entered numbers!
 # Add to your code so that if they entered something other than an integer it prints
