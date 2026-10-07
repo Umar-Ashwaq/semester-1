@@ -16,7 +16,7 @@ try:
     savings = 12 * amount
     print(f"By the end of the year, you will be saving: {savings}")
     savings_with_interest = (0.8/100)*savings + savings
-    print(f"And with interest..... You will be saving {savings_with_interest:.2f}")
+    print(f"And with interest..... You will be saving £{savings_with_interest:.2f}")
 except:
     print("Invalid amount")
 
