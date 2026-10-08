@@ -16,7 +16,7 @@ password = input("Enter your password: ")
 # Conditional block for login authentication
 
 if username == correct_username and password == correct_password:
-    if xxx:
+    if two_factor_enabled == True:
         two_factor_code = input("Enter the 2FA code sent to your device: ")
         if two_factor_code == correct_2fa_code:
             print("Login successful! Welcome!")
