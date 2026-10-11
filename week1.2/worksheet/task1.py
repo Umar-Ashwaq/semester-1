@@ -9,8 +9,8 @@ try:
     elif grade < 40 and grade >= 0:
         print(f"{grade} is a Fail")
     else:
-        print()
+        sys.exit("Error: Grade must be an integer between 0 and 100")
 except:
     sys.exit("Error: Grade must be an integer between 0 and 100")
-#    print("Error: Grade must be an integer between 0 and 100")
+
     
