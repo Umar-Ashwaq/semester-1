@@ -3,6 +3,8 @@
 k = 2
 while True:
     k = 2 * k 
+    if k > 200:
+        break
     print(k)
     
 
