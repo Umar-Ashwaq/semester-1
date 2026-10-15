@@ -1,0 +1,3 @@
+name: Umar Ashwaq
+age: 17
+favorite colour: Red

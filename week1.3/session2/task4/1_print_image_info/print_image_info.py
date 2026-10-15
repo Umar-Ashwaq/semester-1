@@ -9,3 +9,7 @@
 # print image dimension (i.e., Dimensions: width x height pixels)
 
 # print max gray value (i.e., Max Gray Value: max_gray_value)
+with open("../images/feep.pgm", "r") as f:
+    data = f.readlines()
+
+    data = [line.strip().split() for line in data]
