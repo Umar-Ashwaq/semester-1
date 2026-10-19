@@ -13,12 +13,14 @@
 def mystery_func(string):
     upper = 0
     lower = 0
-
+    """The upper and lower case charecter count is set to 0 initially"""
     for ch in string:
         if ch.isupper():
             upper += 1
         if ch.islower():
             lower += 1
+    """Created a for loop to fliter out upper case from lower case
+        Each time the for loop runs and if it finds a lower or upper case, it does +1 to the corresponding vaiable."""
     return (upper, lower)
 
 
