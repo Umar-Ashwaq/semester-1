@@ -1,4 +1,4 @@
-num = [1,4,5,6,3,5]
+num = [34,535,35,4,4,44,244,5]
 def average(task):
     avg = sum(task)/len(task)
     return avg
