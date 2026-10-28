@@ -20,7 +20,8 @@ def mystery_func(string):
         if ch.islower():
             lower += 1
     """Created a for loop to fliter out upper case from lower case
-        Each time the for loop runs and if it finds a lower or upper case, it does +1 to the corresponding vaiable."""
+        Each time the for loop runs and if it finds a lower or upper case, it does +1 to the
+        corresponding vaiable."""
     return (upper, lower)
 
 
@@ -36,5 +37,5 @@ print(mystery_func("ABC"))
 # Uncomment the lines of code one by one and run the program
 # to see if you are right?
 
-# print(mystery_func("X"))
-# print(mystery_func("[2, 3]"))
+print(mystery_func("X"))
+print(mystery_func("[2, 3]"))
