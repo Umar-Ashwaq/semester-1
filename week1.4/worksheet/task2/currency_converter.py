@@ -22,62 +22,14 @@ def currency_converter(amount, from_currency, to_currency):
     if amount < 0:
         return 0.0
     else:
-        if from_currency == 'GBP':
-            if to_currency == 'CNY':
-                converted_amount = amount*conversion_rate['GBP']['CNY']
-                rounded_amount = round(converted_amount, 2)
-                print(f"The converted amount is {rounded_amount}")
-            elif to_currency == 'PHP':
-                converted_amount = amount*conversion_rate['GBP']['PHP']
-                rounded_amount = round(converted_amount, 2)
-                print(f"The converted amount is {rounded_amount}")
-            elif to_currency == 'INR':
-                converted_amount = amount*conversion_rate['GBP']['INR']
-                rounded_amount = round(converted_amount, 2)
-                print(f"The converted amount is {rounded_amount}")
-        if from_currency == 'CNY':
-            if to_currency == 'GBP':
-                converted_amount = amount*conversion_rate['CNY']['GBP']
-                rounded_amount = round(converted_amount, 2)
-                print(f"The converted amount is {rounded_amount}")
-            elif to_currency == 'PHP':
-                converted_amount = amount*conversion_rate['CNY']['PHP']
-                rounded_amount = round(converted_amount, 2)
-                print(f"The converted amount is {rounded_amount}")
-            elif to_currency == 'INR':
-                converted_amount = amount*conversion_rate['CNY']['INR']
-                rounded_amount = round(converted_amount, 2)
-                print(f"The converted amount is {rounded_amount}")
-        if from_currency == 'PHP':
-            if to_currency == 'CNY':
-                converted_amount = amount*conversion_rate['PHP']['CNY']
-                rounded_amount = round(converted_amount, 2)
-                print(f"The converted amount is {rounded_amount}")
-            elif to_currency == 'GBP':
-                converted_amount = amount*conversion_rate['PHP']['GBP']
-                print(f"The converted amount is {converted_amount}")
-            elif to_currency == 'INR':
-                converted_amount = amount*conversion_rate['PHP']['INR']
-                print(f"The converted amount is {converted_amount}")
-        if from_currency == 'INR':
-            if to_currency == 'CNY':
-                converted_amount = amount*conversion_rate['INR']['CNY']
-                rounded_amount = round(converted_amount, 2)
-                print(f"The converted amount is {rounded_amount}")
-            elif to_currency == 'GBP':
-                converted_amount = amount*conversion_rate['INR']['GBP']
-                rounded_amount = round(converted_amount, 2)
-                print(f"The converted amount is {rounded_amount}")
-            elif to_currency == 'PHP':
-                converted_amount = amount*conversion_rate['INR']['PHP']
-                rounded_amount = round(converted_amount, 2)
-                print(f"The converted amount is {rounded_amount}")
-    
-    return None
+        if conversion_rate[from_currency]:
+          converted_amount = amount*conversion_rate[from_currency][to_currency]
+          rounded_amount = round(converted_amount, 2)
+    return rounded_amount
 amount_input = float(input("Enter the amount you want to convert: "))
 from_currency = input("Enter the code of currency you want to convert from: ")
 to_currency = input("Enter the code of currency you want to convert to: ")
-currency_converter(amount_input,from_currency,to_currency)
+print(currency_converter(amount_input,from_currency,to_currency))
 # Submit only this file currency_converter.py with the completed function.
 
 # Remove any additional code you may have added during development and testing.
