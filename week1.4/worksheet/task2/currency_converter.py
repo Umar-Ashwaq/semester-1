@@ -26,10 +26,10 @@ def currency_converter(amount, from_currency, to_currency):
           converted_amount = amount*conversion_rate[from_currency][to_currency]
           rounded_amount = round(converted_amount, 2)
     return rounded_amount
-amount_input = float(input("Enter the amount you want to convert: "))
-from_currency = input("Enter the code of currency you want to convert from: ")
-to_currency = input("Enter the code of currency you want to convert to: ")
-print(currency_converter(amount_input,from_currency,to_currency))
+#amount_input = float(input("Enter the amount you want to convert: "))
+#from_currency = input("Enter the code of currency you want to convert from: ")
+#to_currency = input("Enter the code of currency you want to convert to: ")
+#print(currency_converter(amount_input,from_currency,to_currency))
 # Submit only this file currency_converter.py with the completed function.
 
 # Remove any additional code you may have added during development and testing.
