@@ -18,13 +18,13 @@ def odd_even(lstIntegers):
     """
 
     # Complete your code here
-    even = 0
-    odd = 0
+    odd_count = 0
+    even_count = 0
     for i in lstIntegers:
         if i % 2 == 0:
-            even += 1
+            even_count += 1
         else:
-            odd += 1
-    return [odd, even]
+            odd_count += 1
+    return [odd_count, even_count]
 # Check if correct output is produced
-print(odd_even([2, 3, 7, 8, 10]))  # Output: [3, 2]
+print(odd_even([2,3,5,6,7]))  # Output: [3, 2]
