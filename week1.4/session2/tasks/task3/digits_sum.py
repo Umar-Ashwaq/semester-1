@@ -22,7 +22,7 @@ def digits_sum(number):
     
     # base case
     if (number == 0):
-        return number
+        return 0
     # recursive case
     return number%10 + digits_sum(number // 10)
 
