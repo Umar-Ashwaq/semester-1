@@ -13,5 +13,6 @@ p = geometry.Point(2.0,4.5)
 #  - Creates a Circle object, using the Point object and a value for radius
 #  - Displays the area of the circle
 #  - Displays the perimeter of the circle
-C = geometry.Circle(3,p)
-print(C.area())
+c = geometry.Circle(3,p)
+print(c.area())
+print(c.perimeter())
