@@ -19,8 +19,8 @@ class Point:
     def distance(self):
         return math.hypot(self.x,self.y)
     # Add distance_to() method here
-    def distance_to(self,p):
-        return math.hypot(self.x-p.x,self.y-p.y)
+    def distance_to(self,other):
+        return math.hypot(self.x-other.x,self.y-other.y)
     
 class Circle:
 
